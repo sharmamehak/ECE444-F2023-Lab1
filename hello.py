@@ -1,6 +1,8 @@
 from flask import Flask, render_template
 from flask_bootstrap import Bootstrap
+from flask_moment import Moment
 
+moment = Moment(app)
 bootstrap = Bootstrap(app)
 app = Flask(__name__)
 
